@@ -1,6 +1,6 @@
 <div align="center">
 
-# HAC-Net: A Transformer-Based Deep Reinforcement Learning Framework for Scheduling Coupled Heterogeneous AGV Systems
+# HAC-Net: A Transformer-Based Deep Reinforcement Learning for Scheduling Coupled Heterogeneous AGV Systems
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
