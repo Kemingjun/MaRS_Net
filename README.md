@@ -38,7 +38,9 @@ We provide a visualization of the Carrier-Shuttle collaboration within a simulat
 
 
 
-https://github.com/user-attachments/assets/f4faccb7-7f45-4e6e-9e3f-a3a4cfadda26
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/f4faccb7-7f45-4e6e-9e3f-a3a4cfadda26" controls style="max-width:90%;"></video>
+</div>
 
 
 
