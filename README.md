@@ -37,6 +37,11 @@ As illustrated below, the cooperation follows a strictly synchronized four-stage
 We provide a visualization of the Carrier-Shuttle collaboration within a simulated factory environment. The following demo showcases **4 Carriers** and **8 Shuttles** collaborating to execute **20 tasks**.
 
 
+
+https://github.com/user-attachments/assets/f4faccb7-7f45-4e6e-9e3f-a3a4cfadda26
+
+
+
 > **Note:** If the video above does not render, please view `media/Carrier_shutltle_cooperation.mp4` locally.
 
 **Legend:**
