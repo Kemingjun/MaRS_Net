@@ -54,7 +54,7 @@ We provide a visualization of the Carrier-Shuttle collaboration within a simulat
 HAC-Net employs a **Hierarchical Transformer-based Encoder-Decoder** architecture tailored to the coupling constraints of heterogeneous agents.
 
 <div align="center">
-  <img src="media/framework.png" alt="HAC-Net Framework" width="50%">
+  <img src="media/Framework.png" alt="HAC-Net Framework" width="50%">
   <br>
   <em>Figure 2: Framework of the proposed HAC-Net policy network.</em>
 </div>
