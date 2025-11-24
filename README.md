@@ -36,9 +36,6 @@ As illustrated below, the cooperation follows a strictly synchronized four-stage
 
 We provide a visualization of the Carrier-Shuttle collaboration within a simulated factory environment. The following demo showcases **4 Carriers** and **8 Shuttles** collaborating to execute **20 tasks**.
 
-<div align="center">
-  <img src="media/Carrier_shutltle_cooperation.gif" style="max-width: 80%;">
-</div>
 
 > **Note:** If the video above does not render, please view `media/Carrier_shutltle_cooperation.mp4` locally.
 
@@ -57,7 +54,7 @@ We provide a visualization of the Carrier-Shuttle collaboration within a simulat
 HAC-Net employs a **Hierarchical Transformer-based Encoder-Decoder** architecture tailored to the coupling constraints of heterogeneous agents.
 
 <div align="center">
-  <img src="media/framework.png" alt="HAC-Net Framework" width="50%">
+  <img src="media/Framework.png" alt="HAC-Net Framework" width="50%">
   <br>
   <em>Figure 2: Framework of the proposed HAC-Net policy network.</em>
 </div>
