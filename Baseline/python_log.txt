@@ -1,0 +1,91 @@
+2025-11-23 17:36:08,465 - INFO - ---------- size_10_uniform/T10_I1_uniform.xlsx start ----------
+2025-11-23 17:36:08,866 - INFO - Set parameter TimeLimit to value 60
+2025-11-23 17:36:08,866 - INFO - Set parameter LogFile to value "gurobi_log.txt"
+2025-11-23 17:36:08,867 - INFO - Set parameter MIPFocus to value 1
+2025-11-23 17:36:08,867 - INFO - Set parameter Heuristics to value 0.3
+2025-11-23 17:36:08,867 - INFO - Set parameter NoRelHeurTime to value 6
+2025-11-23 17:36:08,867 - INFO - Set parameter RINS to value 1
+2025-11-23 17:36:08,869 - INFO - Gurobi Optimizer version 11.0.0 build v11.0.0rc2 (win64 - Windows 11+.0 (26100.2))
+2025-11-23 17:36:08,869 - INFO - 
+2025-11-23 17:36:08,870 - INFO - CPU model: AMD Ryzen 9 7945HX with Radeon Graphics, instruction set [SSE2|AVX|AVX2|AVX512]
+2025-11-23 17:36:08,870 - INFO - Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+2025-11-23 17:36:08,870 - INFO - 
+2025-11-23 17:36:08,870 - INFO - Optimize a model with 7608 rows, 2719 columns and 50058 nonzeros
+2025-11-23 17:36:08,871 - INFO - Model fingerprint: 0xf30d47a5
+2025-11-23 17:36:08,871 - INFO - Variable types: 57 continuous, 2662 integer (2662 binary)
+2025-11-23 17:36:08,871 - INFO - Coefficient statistics:
+2025-11-23 17:36:08,871 - INFO -   Matrix range     [1e+00, 1e+04]
+2025-11-23 17:36:08,871 - INFO -   Objective range  [4e-01, 6e-01]
+2025-11-23 17:36:08,871 - INFO -   Bounds range     [1e+00, 1e+00]
+2025-11-23 17:36:08,871 - INFO -   RHS range        [1e+00, 1e+04]
+2025-11-23 17:36:08,919 - INFO - Presolve removed 1233 rows and 347 columns
+2025-11-23 17:36:08,919 - INFO - Presolve time: 0.04s
+2025-11-23 17:36:08,920 - INFO - Presolved: 6375 rows, 2372 columns, 42146 nonzeros
+2025-11-23 17:36:08,931 - INFO - Variable types: 40 continuous, 2332 integer (2332 binary)
+2025-11-23 17:36:08,935 - INFO - Starting NoRel heuristic
+2025-11-23 17:36:08,943 - INFO - Found phase-1 solution: relaxation 553.456
+2025-11-23 17:36:09,087 - INFO - Found phase-1 solution: relaxation 143.309
+2025-11-23 17:36:09,118 - INFO - Found phase-1 solution: relaxation 0
+2025-11-23 17:36:09,119 - INFO - Found heuristic solution: objective 93757.052785
+2025-11-23 17:36:09,119 - INFO - Transition to phase 2
+2025-11-23 17:36:09,196 - INFO - Found heuristic solution: objective 7443.7251651
+2025-11-23 17:36:09,266 - INFO - Found heuristic solution: objective 1694.1364821
+2025-11-23 17:36:09,278 - INFO - Found heuristic solution: objective 1472.3766853
+2025-11-23 17:36:09,290 - INFO - Found heuristic solution: objective 1119.3791600
+2025-11-23 17:36:09,308 - INFO - Found heuristic solution: objective 999.5787523
+2025-11-23 17:36:09,521 - INFO - Found heuristic solution: objective 966.3961979
+2025-11-23 17:36:09,645 - INFO - Found heuristic solution: objective 912.7585081
+2025-11-23 17:36:09,646 - INFO - Found heuristic solution: objective 910.8677513
+2025-11-23 17:36:09,804 - INFO - Found heuristic solution: objective 886.7972173
+2025-11-23 17:36:09,854 - INFO - Found heuristic solution: objective 856.0337377
+2025-11-23 17:36:09,855 - INFO - Found heuristic solution: objective 788.2124908
+2025-11-23 17:36:10,030 - INFO - Found heuristic solution: objective 770.3768804
+2025-11-23 17:36:10,031 - INFO - Found heuristic solution: objective 724.1545900
+2025-11-23 17:36:10,032 - INFO - Found heuristic solution: objective 699.7908743
+2025-11-23 17:36:10,693 - INFO - Found heuristic solution: objective 651.5077853
+2025-11-23 17:36:10,694 - INFO - Found heuristic solution: objective 582.1210400
+2025-11-23 17:36:11,132 - INFO - Found heuristic solution: objective 575.6142326
+2025-11-23 17:36:11,762 - INFO - Found heuristic solution: objective 558.9535160
+2025-11-23 17:36:11,977 - INFO - Found heuristic solution: objective 556.6925558
+2025-11-23 17:36:11,978 - INFO - Found heuristic solution: objective 528.2227313
+2025-11-23 17:36:12,972 - INFO - Found heuristic solution: objective 489.8693630
+2025-11-23 17:36:13,202 - INFO - Found heuristic solution: objective 467.3341793
+2025-11-23 17:36:14,195 - INFO - Elapsed time for NoRel heuristic: 5s (best bound 0)
+2025-11-23 17:36:16,169 - INFO - Found heuristic solution: objective 467.3341631
+2025-11-23 17:36:16,170 - INFO - Found heuristic solution: objective 438.1248784
+2025-11-23 17:36:16,180 - INFO - 
+2025-11-23 17:36:16,180 - INFO - Root simplex log...
+2025-11-23 17:36:16,180 - INFO - 
+2025-11-23 17:36:16,180 - INFO - Iteration    Objective       Primal Inf.    Dual Inf.      Time
+2025-11-23 17:36:16,180 - INFO -        0    0.0000000e+00   6.400000e+01   0.000000e+00      7s
+2025-11-23 17:36:16,199 - INFO -      348    0.0000000e+00   0.000000e+00   0.000000e+00      7s
+2025-11-23 17:36:16,200 - INFO - 
+2025-11-23 17:36:16,200 - INFO - Root relaxation: objective 0.000000e+00, 348 iterations, 0.02 seconds (0.02 work units)
+2025-11-23 17:36:16,391 - INFO - 
+2025-11-23 17:36:16,392 - INFO -     Nodes    |    Current Node    |     Objective Bounds      |     Work
+2025-11-23 17:36:16,392 - INFO -  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+2025-11-23 17:36:16,392 - INFO - 
+2025-11-23 17:36:16,392 - INFO -      0     0    0.00000    0   65  438.12488    0.00000   100%     -    7s
+2025-11-23 17:36:16,485 - INFO -      0     0    0.00000    0   85  438.12488    0.00000   100%     -    7s
+2025-11-23 17:36:16,504 - INFO -      0     0    0.00000    0   83  438.12488    0.00000   100%     -    7s
+2025-11-23 17:36:16,838 - INFO -      0     0    0.00000    0   69  438.12488    0.00000   100%     -    7s
+2025-11-23 17:36:17,090 - INFO -      0     0    0.00000    0   50  438.12488    0.00000   100%     -    8s
+2025-11-23 17:36:17,247 - INFO -      0     0    0.00000    0   66  438.12488    0.00000   100%     -    8s
+2025-11-23 17:36:17,319 - INFO -      0     0    0.00000    0   58  438.12488    0.00000   100%     -    8s
+2025-11-23 17:36:17,572 - INFO -      0     0    0.00000    0   57  438.12488    0.00000   100%     -    8s
+2025-11-23 17:36:18,109 - INFO -      0     2    0.00000    0   57  438.12488    0.00000   100%     -    9s
+2025-11-23 17:36:19,371 - INFO -     31    48    0.00000    5   93  438.12488    0.00000   100%   102   10s
+2025-11-23 17:36:19,415 - INFO - 
+2025-11-23 17:36:19,416 - INFO - Cutting planes:
+2025-11-23 17:36:19,416 - INFO -   MIR: 3
+2025-11-23 17:36:19,416 - INFO -   Zero half: 3
+2025-11-23 17:36:19,417 - INFO - 
+2025-11-23 17:36:19,418 - INFO - Explored 47 nodes (16508 simplex iterations) in 10.55 seconds (6.67 work units)
+2025-11-23 17:36:19,418 - INFO - Thread count was 32 (of 32 available processors)
+2025-11-23 17:36:19,418 - INFO - 
+2025-11-23 17:36:19,419 - INFO - Solution count 10: 438.125 467.334 467.334 ... 651.508
+2025-11-23 17:36:19,419 - INFO - 
+2025-11-23 17:36:19,419 - INFO - Solve interrupted
+2025-11-23 17:36:19,419 - INFO - Best objective 4.381248783873e+02, best bound 0.000000000000e+00, gap 100.0000%
+2025-11-23 17:36:19,420 - INFO - ---------- size_10_uniform/T10_I1_uniform.xlsx end ----------
+2025-11-23 17:36:19,420 - INFO - Objective: 438.124878

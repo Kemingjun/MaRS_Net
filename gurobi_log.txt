@@ -1,0 +1,116 @@
+
+Gurobi 11.0.0 (win64) logging started Mon Nov 24 14:10:17 2025
+
+Set parameter LogFile to value "gurobi_log.txt"
+Set parameter MIPFocus to value 1
+Set parameter Heuristics to value 0.3
+Set parameter NoRelHeurTime to value 6
+Set parameter RINS to value 1
+Gurobi Optimizer version 11.0.0 build v11.0.0rc2 (win64 - Windows 11+.0 (26100.2))
+
+CPU model: AMD Ryzen 9 7945HX with Radeon Graphics, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Optimize a model with 7608 rows, 2719 columns and 50058 nonzeros
+Model fingerprint: 0xb34af95c
+Variable types: 57 continuous, 2662 integer (2662 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+04]
+  Objective range  [4e-01, 6e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+04]
+Presolve removed 1233 rows and 347 columns
+Presolve time: 0.05s
+Presolved: 6375 rows, 2372 columns, 42146 nonzeros
+Variable types: 30 continuous, 2342 integer (2332 binary)
+Starting NoRel heuristic
+Found phase-1 solution: relaxation 327
+Found phase-1 solution: relaxation 1
+Found heuristic solution: objective 116425.40000
+Transition to phase 2
+Found heuristic solution: objective 2756.9000000
+Found heuristic solution: objective 2525.1000000
+Found heuristic solution: objective 2465.4000000
+Found heuristic solution: objective 1909.4000000
+Found heuristic solution: objective 1499.6000000
+Found heuristic solution: objective 1261.4000000
+Found heuristic solution: objective 1258.4000000
+Found heuristic solution: objective 1038.7000000
+Found heuristic solution: objective 1029.1000000
+Found heuristic solution: objective 1019.2000000
+Found heuristic solution: objective 1007.7000000
+Found heuristic solution: objective 862.7000000
+Found heuristic solution: objective 848.7000000
+Found heuristic solution: objective 814.7000000
+Found heuristic solution: objective 802.7000000
+Found heuristic solution: objective 778.5000000
+Found heuristic solution: objective 774.5000000
+Found heuristic solution: objective 675.5000000
+Found heuristic solution: objective 565.8000000
+NoRel heuristic complete
+
+Explored 0 nodes (0 simplex iterations) in 3.59 seconds (1.59 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 10: 565.8 675.5 774.5 ... 1019.2
+
+Solve interrupted
+Best objective 5.658000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
+
+Gurobi 11.0.0 (win64) logging started Mon Nov 24 14:50:56 2025
+
+Set parameter LogFile to value "gurobi_log.txt"
+Set parameter MIPFocus to value 1
+Set parameter Heuristics to value 0.3
+Set parameter NoRelHeurTime to value 360
+Set parameter RINS to value 1
+Gurobi Optimizer version 11.0.0 build v11.0.0rc2 (win64 - Windows 11+.0 (26100.2))
+
+CPU model: AMD Ryzen 9 7945HX with Radeon Graphics, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Optimize a model with 7608 rows, 2719 columns and 50058 nonzeros
+Model fingerprint: 0xb34af95c
+Variable types: 57 continuous, 2662 integer (2662 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+04]
+  Objective range  [4e-01, 6e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+04]
+Presolve removed 1233 rows and 347 columns
+Presolve time: 0.05s
+Presolved: 6375 rows, 2372 columns, 42146 nonzeros
+Variable types: 30 continuous, 2342 integer (2332 binary)
+Starting NoRel heuristic
+Found phase-1 solution: relaxation 327
+Found phase-1 solution: relaxation 1
+Found heuristic solution: objective 116425.40000
+Transition to phase 2
+Found heuristic solution: objective 2756.9000000
+Found heuristic solution: objective 2525.1000000
+Found heuristic solution: objective 2465.4000000
+Found heuristic solution: objective 1909.4000000
+Found heuristic solution: objective 1499.6000000
+Found heuristic solution: objective 1261.4000000
+Found heuristic solution: objective 1258.4000000
+Found heuristic solution: objective 1038.7000000
+Found heuristic solution: objective 1029.1000000
+Found heuristic solution: objective 1019.2000000
+Found heuristic solution: objective 1007.7000000
+Found heuristic solution: objective 862.7000000
+Found heuristic solution: objective 848.7000000
+Found heuristic solution: objective 814.7000000
+Found heuristic solution: objective 802.7000000
+Found heuristic solution: objective 778.5000000
+Found heuristic solution: objective 774.5000000
+Found heuristic solution: objective 675.5000000
+Found heuristic solution: objective 565.8000000
+NoRel heuristic complete
+
+Explored 0 nodes (0 simplex iterations) in 2.23 seconds (1.05 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 10: 565.8 675.5 774.5 ... 1019.2
+
+Solve interrupted
+Best objective 5.658000000000e+02, best bound 0.000000000000e+00, gap 100.0000%
