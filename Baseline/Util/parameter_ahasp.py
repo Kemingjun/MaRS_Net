@@ -1,6 +1,6 @@
 class paramet_ahasp:
     """
-    Configuration parameters for the AHASP (Carrier-Shuttle System).
+    Configuration parameters for the AHASP (Carrier-Worker System).
     """
 
     # ==========================================

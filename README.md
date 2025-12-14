@@ -1,13 +1,15 @@
 <div align="center">
 
-# HAC-Net: A Transformer-Based Deep Reinforcement Learning Framework for Scheduling Coupled Heterogeneous AGV Systems
+# MaRS-Net: A Transformer-Based Deep Reinforcement Learning for Cooperative Scheduling in Marsupial Robotic Systems
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.7%2B-orange)](https://pytorch.org/)
 [![Framework](https://img.shields.io/badge/Framework-DRL-green)](https://github.com/)
 
-**Official implementation of the paper: "HAC-Net: A Transformer-Based Deep Reinforcement Learning for Scheduling Coupled Heterogeneous AGV Systems"**
+**Official implementation of the paper: "MaRS-Net: A Transformer-Based Deep Reinforcement Learning for Cooperative Scheduling in Marsupial Robotic Systems"**
+
+*Submitted to IEEE Robotics and Automation Letters (RA-L)*
 
 </div>
 
@@ -15,62 +17,63 @@
 
 ## 📖 Introduction
 
+**Marsupial Robotic Systems (MRS)** are increasingly deployed in complex missions by pairing large mobile carriers with smaller deployable agents. While combining global mobility with specialized local functions enhances versatility, coordinating such tightly coupled systems introduces significant challenges.
 
-Heterogeneous robot systems are increasingly adopted in modern industry due to their operational flexibility. However, coordinating such systems introduces substantial complexity. Motivated by real-world battery manufacturing processes, this repository presents **HAC-Net**, a novel framework designed to solve the **Coupled Heterogeneous AGV Scheduling Problem (CHASP)**.
+This repository presents **MaRS-Net**, a novel Deep Reinforcement Learning (DRL) framework designed to solve the **Cooperative Marsupial Scheduling Problem (CMSP)**.
 
-The problem characterizes a system comprised of two complementary AGV types—**Carriers** (transport capability) and **Shuttles** (handling capability). These agents must dynamically **couple** and **decouple** to execute complex transport tasks.
+The system comprises two heterogeneous robot types:
+* **Carrier Robots (CRs):** Provide global inter-station transport and mobility.
+* **Worker Robots (WRs):** Focus on intra-station execution and localized processing.
 
-As illustrated below, the cooperation follows a strictly synchronized four-stage cycle: **Couple $\to$ Pickup $\to$ Delivery $\to$ Decouple**.
+These agents must dynamically **couple** and **decouple** to execute tasks. As illustrated below, the collaboration follows a strictly synchronized four-stage cycle: **Docking $\to$ Fetching $\to$ Transfer $\to$ Undocking**.
 
 <div align="center">
-  <img src="media/Workflow.png" alt="Cooperative Workflow" width="60%">
+  <img src="media/Workflow.png" alt="Cooperative Workflow of Carrier-Worker System" width="60%">
   <br>
-  <em>Figure 1: The cooperative workflow of the Carrier-Shuttle system.</em>
+  <em>Figure 1: The cooperative workflow of the Carrier-Worker MRS.</em>
 </div>
 
-**HAC-Net** formulates this intricate interaction as a Markov Decision Process (MDP). It leverages a Transformer-based encoder-decoder architecture to autoregressively assemble Carrier-Shuttle pairs and assign tasks, thereby resolving synchronization constraints and preventing deadlocks effectively.
+**MaRS-Net** formulates this intricate interaction as a Markov Decision Process (MDP). It leverages a Transformer-based encoder-decoder architecture to autoregressively assemble **Carrier-Worker pairs** and assign tasks, thereby resolving strict spatiotemporal synchronization constraints and preventing deadlocks effectively.
 
 ---
 
 ## 🎥 Visualization & Demo
 
-We provide a visualization of the Carrier-Shuttle collaboration within a simulated factory environment. The following demo showcases **4 Carriers** and **8 Shuttles** collaborating to execute **20 tasks**.
+We provide a visualization of the Carrier-Worker collaboration within a simulated industrial environment. The demo showcases **4 CRs** and **8 WRs** collaborating to execute a sequence of tasks.
 
-
-> **Note:** If the video above does not render, please view `media/Carrier_shutltle_cooperation.mp4` locally.
+> **Note:** If the video above does not render, please view `media/Carrier_Worker_cooperation.mp4` locally.
 
 **Legend:**
 
-- <span style="display:inline-block;width:14px;height:14px;background:#ff4d4f;border:1px solid #000;margin-right:4px;"></span> **Source Nodes (Red):** Task origination points.
-- <span style="display:inline-block;width:14px;height:14px;background:#52c41a;border:1px solid #000;margin-right:4px;"></span> **Destination Nodes (Green):** Designated locations for AGV coupling/decoupling.
-- <span style="display:inline-block;width:14px;height:14px;background:#bfbfbf;border:1px solid #000;margin-right:4px;"></span> **Production Chambers (Grey):** Areas where Shuttles operate independently.
-- <span style="display:inline-block;width:14px;height:14px;background:#ffffff;border:1px solid #000;margin-right:4px;"></span> **Aisle (White):** Navigable paths for Carriers.
-
+- <span style="display:inline-block;width:14px;height:14px;background:#ff4d4f;border:1px solid #000;margin-right:4px;"></span> **Source Nodes (Red):** Task fetch locations.
+- <span style="display:inline-block;width:14px;height:14px;background:#52c41a;border:1px solid #000;margin-right:4px;"></span> **Destination Nodes (Green):** Designated locations for undocking and processing.
+- <span style="display:inline-block;width:14px;height:14px;background:#bfbfbf;border:1px solid #000;margin-right:4px;"></span> **Processing Chambers (Grey):** Areas where WRs operate independently.
+- <span style="display:inline-block;width:14px;height:14px;background:#ffffff;border:1px solid #000;margin-right:4px;"></span> **Aisle (White):** Navigable paths for Carrier Robots.
 
 ---
 
 ## 🧠 Model Architecture
 
-HAC-Net employs a **Hierarchical Transformer-based Encoder-Decoder** architecture tailored to the coupling constraints of heterogeneous agents.
+MaRS-Net employs a **Hierarchical Transformer-based Encoder-Decoder** architecture tailored to the coupling constraints of heterogeneous agents.
 
 <div align="center">
-  <img src="media/Framework.png" alt="HAC-Net Framework" width="50%">
+  <img src="media/Framework.png" alt="MaRS-Net Framework" width="50%">
   <br>
-  <em>Figure 2: Framework of the proposed HAC-Net policy network.</em>
+  <em>Figure 2: Framework of the proposed MaRS-Net policy network.</em>
 </div>
-
 
 ### The framework comprises two core mechanisms:
 
 ### 1. Dual-Stream Encoder
 * **Task Stream:** Encodes static task attributes (e.g., source/destination coordinates, due times) via Multi-Head Self-Attention layers.
-* **AGV Stream:** Encodes dynamic AGV states (e.g., current location $l_t$, availability time $\tau_t$). These embeddings are updated at each decision step to reflect the real-time environment status.
+* **Robot Stream:** Encodes dynamic robot states (e.g., current location $L_r^t$, availability time $T_r^t$). These embeddings are re-computed at each decision step to reflect the real-time fleet status.
 
 ### 2. Hierarchical Decoder
-* **Carrier-Shuttle Coupler:** Selects a compatible Carrier ($r^+$) and Shuttle ($r^-$) pair based on the fused embeddings to form a collaborative unit.
-* **Task Selector:** Conditioned on the selected pair, this module assigns the optimal task ($\alpha_t$) to the unit.
+The decoder adopts a **"Pair-First, Task-Second"** strategy:
+* **Carrier-Worker Coupler:** Sequentially selects a compatible Carrier Robot ($r^+$) and a Worker Robot ($r^-$) to form a collaborative execution pair ($\mathcal{K}_t$).
+* **Task Selector:** Conditioned on the formed pair $\mathcal{K}_t$, this module identifies the optimal task ($\alpha_t$) to execute.
 
-This hierarchical approach ensures that the generated schedules inherently satisfy the physical and temporal synchronization constraints of the CHASP.
+This hierarchical approach ensures that the generated schedules inherently satisfy the physical coupling and temporal synchronization requirements of the MRS.
 
 ---
 
