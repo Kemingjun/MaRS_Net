@@ -9,7 +9,6 @@
 
 **Official implementation of the paper: "MaRS-Net: A Transformer-Based Deep Reinforcement Learning for Cooperative Scheduling in Marsupial Robotic Systems"**
 
-*Submitted to IEEE Robotics and Automation Letters (RA-L)*
 
 </div>
 
