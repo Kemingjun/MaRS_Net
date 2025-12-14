@@ -42,8 +42,11 @@ These agents must dynamically **couple** and **decouple** to execute tasks. As i
 We provide a visualization of the Carrier-Worker collaboration within a simulated industrial environment. The demo showcases **4 CRs** and **8 WRs** collaborating to execute a sequence of tasks.
 
 
+<div align="center">
+
 https://github.com/user-attachments/assets/928c993c-489d-4d9c-a9ef-b3bca33df0b6
 
+</div>
 
 > **Note:** If the video above does not render, please view `media/Carrier_Worker_cooperation.mp4` locally.
 
